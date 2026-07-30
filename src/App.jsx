@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import Papa from 'papaparse';
 import FacultyCard from './components/FacultyCard';
+import ChartComponent from './components/ChartComponent'; // Import the ChartComponent
 import kecLogo from './assets/kec_logo.jpg'; // Import the logo image
 import './App.css';
 
@@ -101,17 +102,24 @@ function App() {
           </h1>
         </div>
       </header>
+      <h2 className='heading'>Research Publications by Faculty</h2>
       {/* Metric Summary */}
+      <div className="summary-section">
         <div className="summary-banner">
           <div className="summary-card">
             <span className="summary-label">Total Faculty</span>
             <span className="summary-value">{facultyList.length}</span>
           </div>
-          <div className="summary-card highlight">
+          <div className="summary-card citations">
             <span className="summary-label">Cumulative Citations</span>
             <span className="summary-value">{cumulativeCitations.toLocaleString()}</span>
           </div>
+          
         </div>
+        <div className="summary-chart">
+            <ChartComponent/>
+        </div>
+      </div>
         {/* Search Bar */}
      {/* <div className="search-bar-container">
         <input
