@@ -110,7 +110,7 @@ function App() {
             <span className="summary-label">Total Faculty</span>
             <span className="summary-value">{facultyList.length}</span>
           </div>
-          <div className="summary-card citations">
+          <div className="summary-card">
             <span className="summary-label">Cumulative Citations</span>
             <span className="summary-value">{cumulativeCitations.toLocaleString()}</span>
           </div>
