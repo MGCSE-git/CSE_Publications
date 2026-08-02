@@ -3,8 +3,9 @@ import Papa from 'papaparse';
 import FacultyCard from './components/FacultyCard';
 import ChartComponent from './components/ChartComponent'; // Import the ChartComponent
 import kecLogo from './assets/kec_logo.jpg'; // Import the logo image
+import chart from'./assets/departmentCitationChart.png';
 import './App.css';
-
+import './css/summary.css'; // Import the summary CSS file
 function App() {
   const [facultyList, setFacultyList] = useState([]);
   //const [searchTerm, setSearchTerm] = useState('');
@@ -102,7 +103,7 @@ function App() {
           </h1>
         </div>
       </header>
-      <h2 className='heading'>Research Publications by Faculty</h2>
+      <h2 className='heading' style={{color:'green'}}>Department Citations Summary</h2>
       {/* Metric Summary */}
       <div className="summary-section">
         <div className="summary-banner">
@@ -110,14 +111,13 @@ function App() {
             <span className="summary-label">Total Faculty</span>
             <span className="summary-value">{facultyList.length}</span>
           </div>
-          <div className="summary-card">
-            <span className="summary-label">Cumulative Citations</span>
-            <span className="summary-value">{cumulativeCitations.toLocaleString()}</span>
+          <div className="summary-card citations">
+            <div className="summary-label">Total Citations</div>
+            <div className="summary-value">{cumulativeCitations.toLocaleString()}</div>
           </div>
-          
         </div>
         <div className="summary-chart">
-            <ChartComponent/>
+            <img src={chart} alt="Summary Chart" />
         </div>
       </div>
         {/* Search Bar */}
@@ -135,6 +135,7 @@ function App() {
       
       {/* Main Grid Content Area */}
       <main className="app-container">
+        <h2 className='heading'>Research Publications by Faculty</h2>
         {loading ? (
           <div className="status-msg">Loading faculty publication records...</div>
         ) : (
