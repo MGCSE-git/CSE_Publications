@@ -1,0 +1,131 @@
+/* Summary Section */
+.summary-section {
+  width: 100%;
+  max-width: 1400px;
+  margin: 30px auto;
+  padding: 20px;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Cards and Chart Container */
+.summary-banner {
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  flex-wrap: wrap;
+
+  margin-bottom: 30px;
+}
+
+/* Summary Cards */
+.summary-card {
+  width: 240px;
+  width: 280px;
+  padding: 20px;
+
+  background: linear-gradient(135deg, #005B96, #00897B);
+  color: white;
+
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  transition: transform 0.3s ease;
+}
+
+.summary-card:hover {
+  transform: translateY(-5px);
+}
+
+.summary-label {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-right: 10px;
+  text-align: center;
+}
+
+.summary-value {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+/* Optional style for citation card */
+.summary-card.citations {
+  background: linear-gradient(135deg, #0077B6, #00A896);
+}
+
+/* Chart */
+.summary-chart {
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.summary-chart img {
+  width: 70%;
+  max-width: 700px;
+  min-width: 280px;
+  height: auto;
+
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Tablet */
+@media (max-width: 992px) {
+
+  .summary-banner {
+    gap: 20px;
+  }
+
+  .summary-card {
+    min-width: 220px;
+  }
+
+  .summary-chart img {
+    width: 70%;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+
+  .summary-section {
+    padding: 15px;
+  }
+
+  .summary-banner {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .summary-card {
+    width: 90%;
+    max-width: 350px;
+  }
+
+  .summary-chart img {
+    width: 95%;
+  }
+
+  .summary-value {
+    font-size: 1.7rem;
+  }
+
+  .summary-label {
+    font-size: 0.95rem;
+  }
+}
