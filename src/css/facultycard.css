@@ -35,8 +35,8 @@
 
 .designation {
   font-size: 0.85rem;
-  font-weight: 500;
-  color: #2563eb;
+  font-weight: bold;
+  color: rgb(6, 115, 211);
   margin: 0;
 }
 
@@ -56,7 +56,7 @@
 .metrics-box {
   
   justify-content: space-between;
-  background: #f1f5f9;
+  background: #e6f0fa;
   border-radius: 8px;
   padding: 0.5rem;
   margin-bottom: 1rem;
@@ -92,9 +92,9 @@
 .scholar-link {
   display: block;
   text-align: center;
-  background-color: #f8fafc;
-  border: 1px solid #e2e8f0;
-  color: #2563eb;
+  background: linear-gradient(135deg, #005B96, #00897B);
+  
+  color: white;
   padding: 0.5rem;
   border-radius: 6px;
   text-decoration: none;
@@ -104,9 +104,9 @@
 }
 
 .scholar-link:hover {
-  background-color: #2563eb;
+  background-color: #049d5d;
   color: white;
-  border-color: #2563eb;
+  
 }
 
 .scholar-link.disabled {
