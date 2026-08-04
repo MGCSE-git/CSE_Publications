@@ -3,7 +3,7 @@ import Papa from 'papaparse';
 import FacultyCard from './components/FacultyCard';
 import ChartComponent from './components/ChartComponent'; // Import the ChartComponent
 import kecLogo from './assets/kec_logo.jpg'; // Import the logo image
-import chart from'./assets/departmentCitationChart.png';
+import chart from'./assets/cseCitation.png';
 import './App.css';
 import './css/summary.css'; // Import the summary CSS file
 function App() {
