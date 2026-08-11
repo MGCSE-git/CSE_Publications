@@ -105,12 +105,12 @@ function App() {
       </header>
       <h2 className='heading' style={{color:'green'}}>Department Citations Summary</h2>
       {/* Metric Summary */}
-      <div className="summary-section">
+       <div className="summary-section">
         <div className="summary-banner">
-          <div className="summary-card">
+          {/*<div className="summary-card">
             <span className="summary-label">Total Faculty</span>
             <span className="summary-value">{facultyList.length}</span>
-          </div>
+          </div>*/}
           <div className="summary-card citations">
             <div className="summary-label">Total Citations</div>
             <div className="summary-value">{cumulativeCitations.toLocaleString()}</div>
