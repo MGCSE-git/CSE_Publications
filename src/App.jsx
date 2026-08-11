@@ -113,7 +113,8 @@ function App() {
           </div>*/}
           <div className="summary-card citations">
             <div className="summary-label">Total Citations</div>
-            <div className="summary-value">{cumulativeCitations.toLocaleString()}</div>
+            {/*<div className="summary-value">{cumulativeCitations.toLocaleString()}</div>*/}
+            <div className="summary-value">11100</div>
           </div>
         </div>
         <div className="summary-chart">
